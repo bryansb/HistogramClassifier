@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA423521-7A68-3E29-9A6D-58D2F478ACF6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Practica1</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Practica1.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Practica1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Practica1.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Practica1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Practica1.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Practica1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Practica1.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Practica1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_gapi451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stitching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_aruco451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bioinspired451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ccalib451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudabgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudastereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dpm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_face451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_fuzzy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hdf451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hfs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_img_hash451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_intensity_transform451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_line_descriptor451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_mcc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_quality451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rapid451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_reg451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rgbd451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_saliency451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_structured_light451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_surface_matching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_tracking451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videostab451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xfeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xphoto451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_shape451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_highgui451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_datasets451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_plot451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_text451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ml451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_phase_unwrapping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudacodec451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videoio451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaoptflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudalegacy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudawarping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_optflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ximgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_video451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgcodecs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_calib3d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_features2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_flann451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_photo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaimgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafilters451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaarithm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_core451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudev451.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/Debug/Practica1.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/Debug/Practica1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_gapi451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stitching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_aruco451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bioinspired451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ccalib451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudabgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudastereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dpm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_face451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_fuzzy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hdf451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hfs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_img_hash451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_intensity_transform451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_line_descriptor451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_mcc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_quality451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rapid451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_reg451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rgbd451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_saliency451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_structured_light451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_surface_matching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_tracking451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videostab451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xfeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xphoto451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_shape451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_highgui451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_datasets451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_plot451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_text451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ml451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_phase_unwrapping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudacodec451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videoio451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaoptflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudalegacy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudawarping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_optflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ximgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_video451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgcodecs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_calib3d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_features2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_flann451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_photo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaimgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafilters451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaarithm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_core451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudev451.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/Release/Practica1.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/bin/Practica1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_gapi451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stitching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_aruco451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bioinspired451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ccalib451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudabgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudastereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dpm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_face451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_fuzzy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hdf451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hfs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_img_hash451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_intensity_transform451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_line_descriptor451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_mcc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_quality451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rapid451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_reg451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rgbd451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_saliency451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_structured_light451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_surface_matching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_tracking451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videostab451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xfeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xphoto451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_shape451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_highgui451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_datasets451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_plot451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_text451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ml451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_phase_unwrapping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudacodec451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videoio451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaoptflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudalegacy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudawarping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_optflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ximgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_video451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgcodecs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_calib3d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_features2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_flann451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_photo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaimgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafilters451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaarithm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_core451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudev451.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/MinSizeRel/Practica1.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/MinSizeRel/Practica1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Descargas\OpenCV\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_gapi451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stitching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_aruco451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_bioinspired451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ccalib451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudabgsegm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudastereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dpm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_face451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_fuzzy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hdf451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_hfs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_img_hash451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_intensity_transform451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_line_descriptor451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_mcc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_quality451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rapid451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_reg451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_rgbd451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_saliency451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_stereo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_structured_light451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_superres451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_surface_matching451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_tracking451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videostab451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xfeatures2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xobjdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_xphoto451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_shape451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_highgui451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_datasets451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_plot451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_text451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ml451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_phase_unwrapping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudacodec451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_videoio451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaoptflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudalegacy451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudawarping451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_optflow451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_ximgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_video451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_dnn451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgcodecs451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_objdetect451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_calib3d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_features2d451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_flann451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_photo451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaimgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudafilters451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_imgproc451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudaarithm451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_core451.lib;E:\Descargas\OpenCV\build\install\x64\vc16\lib\opencv_cudev451.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/RelWithDebInfo/Practica1.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/RelWithDebInfo/Practica1.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3" "-BE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build" --check-stamp-file "E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig-version.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules-release.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3" "-BE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build" --check-stamp-file "E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig-version.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules-release.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3" "-BE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build" --check-stamp-file "E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig-version.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules-release.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3" "-BE:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build" --check-stamp-file "E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.20\Templates\CPackConfig.cmake.in;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig-version.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVConfig.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules-release.cmake;E:\Descargas\OpenCV\build\install\x64\vc16\lib\OpenCVModules.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeCXXCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeRCCompiler.cmake;E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\3.20.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\source_files\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\ZERO_CHECK.vcxproj">
+      <Project>{CE3567A7-FD15-3690-9B59-D487B48548A0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

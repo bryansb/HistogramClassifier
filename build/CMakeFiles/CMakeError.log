@@ -1,0 +1,14 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: E:/Documentos/MEGAsync/Universidad/8 Ciclo/Vision por Computador/Trabajos/Practica1.2-3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2ff77.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.9.0+5e4b48a27 para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.28.29913 para x64
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  CheckIncludeFile.c
+  cl /c /I"C:\dev\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2ff77.dir\Debug\\" /Fd"cmTC_2ff77.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [E:\Documentos\MEGAsync\Universidad\8 Ciclo\Vision por Computador\Trabajos\Practica1.2-3\build\CMakeFiles\CMakeTmp\cmTC_2ff77.vcxproj]
+
+
+
