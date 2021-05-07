@@ -13,7 +13,7 @@ void Classifier::loadData(){
         // imagePath.push_back(token[2]);
         // trainImagesPath.push_back(imagePath);
 
-        vector<string> catPath = split(p.path(), '/');
+        vector<string> catPath = split(p.path().string(), '/');
 
         string cat = catPath[catPath.size() - 1];
 
@@ -21,7 +21,7 @@ void Classifier::loadData(){
             // vector<string> imagePathFile = split(pInside.path(), '/');
             // string imageFile = imagePathFile[imagePathFile.size() - 1];
             imagePath.push_back(cat);
-            imagePath.push_back(pInside.path());
+            imagePath.push_back(pInside.path().string());
             trainImagesPath.push_back(imagePath);
         }
     }
