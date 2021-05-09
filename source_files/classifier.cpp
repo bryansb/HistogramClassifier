@@ -114,14 +114,24 @@ double Classifier::calculateDistance(cv::Mat hist1, cv::Mat hist2){
     if (hist1.size() == hist2.size()) {
         int nRows = hist1.rows;
         for (int i = 0; i < nRows; i++){
-            distance += distance + (double)sqrt(pow((double)hist2.at<float>(i) - (double)hist1.at<float>(i), 2.0));
+            distance += distance 
+                + pow((double)hist2.at<float>(i) - (double)hist1.at<float>(i), 2.0);
         }
+        distance = sqrt(distance);
     } else {
         cout << "\nERROR >>> Classifier::calculateDistance(cv::Mat hist1,"
             << "cv::Mat hist2) >> hist1 y hist2 Deben ser del mismo tamaño" << endl;
     }
     return distance;
 }
+
+/**
+ * hist1 = [1,2,31,1,12,2,3]
+ * hist2 = [1,2,31,1,12,2,3]
+ * 
+ * 
+ * 
+ */
 
 bool Classifier::generateCSV(vector<vector<vector<string>>> data, string name) {
     fs::create_directory("../reports");
@@ -160,7 +170,6 @@ void Classifier::printImages(vector<Image> imagesList){
         imagesList[i].toString();
     }
 }
-
 
 /**
  * Getters and Setters

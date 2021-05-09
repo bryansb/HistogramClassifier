@@ -24,9 +24,6 @@ class Image {
     private:
         string category;
         string imagePath;
-        // cv::Mat imageHSV;
-        // cv::Mat imageYCbCr;
-        // cv::Mat imageGray;
     
     public:
         Image(string, string = "empty");
@@ -47,8 +44,6 @@ class Image {
 
 class Classifier { 
     private:
-        // string trainImagesPath;
-        // string testImagesPath;
         cv::Mat image;
         vector<Image> trainImages;
         vector<Image> testImages;
