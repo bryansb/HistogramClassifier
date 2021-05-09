@@ -23,24 +23,56 @@ namespace fs =  std::experimental::filesystem;
 class Image {
     private:
         string category;
-        cv::Mat image;
+        string imagePath;
+        // cv::Mat imageHSV;
+        // cv::Mat imageYCbCr;
+        // cv::Mat imageGray;
     
     public:
-        Image(cv::Mat, string = "empty");
+        Image(string, string = "empty");
+        cv::Mat readImage();
+        vector<cv::Mat> calcBGRHist();
+        vector<cv::Mat> calcHSVHist();
+        vector<cv::Mat> calcYCrCbHist();
+        vector<cv::Mat> calcGrayHist();
+        string getCategory();
+        string getImage();
+        cv::Mat getImageHSV();
+        cv::Mat getImageYCbCr();
+        cv::Mat getImageGray();
+
+        void toString();
 
 };
 
 class Classifier { 
     private:
-        string imagesPath;
+        // string trainImagesPath;
+        // string testImagesPath;
         cv::Mat image;
-        vector<vector<string>> trainImagesPath;
+        vector<Image> trainImages;
+        vector<Image> testImages;
+        int nTrainImages;
+        int nTestImages;
+
+        vector<vector<string>> doPredict(char);
+        vector<Mat> getCalcHistById(Image, char);
 
     public:
-        Classifier(string);
-        void loadData();
-        void predict(string);
-        int calculateDistance(cv::Mat, cv::Mat);
-        void printTrainImagesPath();
+        Classifier(string, string);
+        vector<Image> loadData(string);
+        void predict();
+        vector<vector<string>> predictBGR();
+        vector<vector<string>> predictHSV();
+        vector<vector<string>> predictYCrCb();
+        vector<vector<string>> predictGray();
+        double calculateTotalDistance(vector<Mat>, vector<Mat>);
+        double calculateDistance(cv::Mat, cv::Mat);
+        bool generateCSV(vector<vector<vector<string>>>, string);
+        void printImages(vector<Image>);
         vector<string> split(string cad, char sep);
+
+        cv::Mat getImage();
+        vector<Image> getTrainImages();
+        vector<Image> getTestImages();
 };

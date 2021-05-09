@@ -12,3 +12,6 @@ all:
 
 run:
 	cd bin/; ./Practica1.bin
+
+report:
+	cd source_files/; python report.py
