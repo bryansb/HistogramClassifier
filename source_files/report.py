@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import os
 
 dataframe = None
 labels = ['bgr', 'hsv', 'ycrcb', 'gray']
@@ -42,6 +44,43 @@ def plot_general():
     neg, pos = get_pos_neg(dataframe)
     plot_report('General', pos,neg)
 
+def plot_success_and_fails():
+    i = 0
+    if not os.path.exists("../reports/plt_img/"):
+        os.makedirs("../reports/plt_img/")
+    ind = np.arange(len(labels))
+    for index, row in dataframe.iterrows():
+        plt.close()
+        fig, axs = plt.subplots(1, 2, figsize=(7, 4))
+        
+        axs[0].imshow(mpimg.imread(row['image']))
+        axs[0].set_title('Imagen original', fontsize=12)
+        axs[0].axis('off')
+
+        predicts = row[2:]
+        axs[1].bar(ind, predicts, width, color='mediumseagreen')
+        axs[1].set_xticks(ind)
+        axs[1].set_xticklabels(labels)
+        axs[1].set_title('Predicciones | 0 = Fallo, 1 = Acierto', fontsize=12)
+        axs[1].set_ylabel('Predicción')
+        axs[1].set_xlabel('Espacios de colores')
+
+        image_path = row['image'].split('/')
+        title = 'Resultados de la imagen: ' + image_path[len(image_path) - 1]
+        fig.suptitle(title, fontsize=15)
+        plt.subplots_adjust(left=0.1,
+                bottom=0.2, 
+                right=0.9, 
+                top=0.8, 
+                wspace=0.5, 
+                hspace=0.5)
+        plt.savefig('../reports/plt_img/plt_' + row['category'] + '_' + image_path[len(image_path) - 1], dpi=400)
+        if(i == 0):
+            plt.show()
+        i += 1
+        # print(row)
+    pass
+
 def get_pos_neg(df):
     pos = list()
     neg = list()
@@ -69,7 +108,6 @@ def create_categories():
 
 def read_csv(csv_path):
     dataframe = pd.read_csv(csv_path)
-    dataframe.drop('image', axis=1, inplace=True)
     return dataframe
 
 def set_values(ax, y, is_impar=True):
@@ -86,5 +124,6 @@ def plot_all():
 if __name__ == "__main__":
     dataframe = read_csv("../reports/predicts.csv")
     create_categories()
-    plot_all()
-    plot_general()
+    plot_success_and_fails()
+    # plot_all()
+    # plot_general()
